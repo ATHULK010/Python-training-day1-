@@ -1,0 +1,114 @@
+
+[Python]
+
+*KEYWORDS:
+
+33 keywords
+False,None,True,and,as,assert,break,class,continue,def etc.
+
+*DATATYPES:
+->Numeric
+-int
+-float
+-complex
+
+->String
+-str
+
+->Sequence
+-list
+-tuple
+-range
+
+->Binary
+-bytes
+-bytearray
+-memoryview
+
+->Mapping
+-dict
+
+->Boolean:
+-bool
+
+->Set datatypes:
+-set
+-frozenset
+
+*TO PRINT REFERENCE/PRINT ADDRESS
+->eg:-a=10
+      print(id(a))
+
+*5 TYPE CASTING METHODS:
+->int()
+->float()
+->complex()
+->bool()
+->str()
+
+Whenever u r taking an input,by default it comes in string format.This is where we use type casting.
+
+*MAPPING
+->Syntax:
+  a,b=map(int,input("enter the num:"))
+  print(a,b)
+
+  ->if we use map we can take multiple inputs. If we r using split() we can split based on the character used to split.
+  eg:-  a,b=map(int,input("enter the num:").split("#"))
+        print(a,b)
+
+        enter num:10 20
+        10#20
+
+*OPERATORS
+->Arithmetic-  +,-,*,**,/,//,%
+->Relational or Comparison
+->logical- AND,OR,NOT
+->Bitwise- &(AND),|(OR),~(NOT),^(XOR),<<(left shift),>>(right shift)
+->Assignment - like just x+=10 instead of x=x+10
+->Special- Identity(is,is not),Membership(in,not in)
+
+*CHAINING of relational operators is possible in Python.In this if all comparisons returns True then only result is True.If atleast one comparison returns False then the result is False.
+*Equality operators: ==,!=
+
+*in bitwise NOT if we put a positive no we get a no +1 than the no and for negative no we get a no -1 than the no.
+
+*PRIORITY
+
+Order is:(),**,/ *, + -
+
+eg:-5+4*9%(3+1)/6-1
+    5+4*9%4/6-1
+    5+36%4/6-1
+    5+0/6-1
+    5+0-1
+    5-1
+    4
+
+w=int(input("enter the weight of watermelon "));
+if w%2!=0 or w==2:
+        print("No")
+else:
+   print("Yes")
+
+x=int(input())
+if x<5:
+    print(1)
+
+l,b=map(int,input().split())
+year=0
+while l<=b:
+    l+=3
+    b*=2
+    year+=1
+print(year)
+
+n=int(input("enter total no of travel "))
+m=int(input("enter total no of days using metro card"))
+a=int(input("enter cost of normal ticket"))
+b=int(input"enter cost of metro card"))
+n,m,a,b=map(int,input().split())
+if a*m<b:
+    print(a*n)
+else:
+   print(((n//m)*b)+min(b,(n%m)*a))
